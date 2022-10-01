@@ -121,4 +121,5 @@ It was! You can see the "Hey lol 2" at the bottom displayed from the server.
 
 ## Optimizing Remote Running
 
-My lab group didn't reach this part of the lab. 
+
+We ran out of time before we could start this part of the lab.
