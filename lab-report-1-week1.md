@@ -80,3 +80,45 @@ Below is an example, be careful to follow each line.
     *  `~> cp file.txt ~\otherDirectory`
 
 ![alt](image9.png)
+
+## Moving Files with scp
+
+`scp` is a command used to copy a file from your computer (referred to as the client) to a server.
+
+Think of it as when you want to transfer a picture or a document from your cellphone to your laptop and you email it to yourself.\
+It is used as follows:\
+`~> scp file.txt cs15lfa22xx@ieng6.ucsd.edu:~/`
+
+The following image is what me and my group mates followed as Ian McNellis worked with a TA's account in their laptop.
+
+
+![alt](image99.png)
+
+## Setting an SSH Key
+
+Eventhough the `scp` commans is very useful, it took my lab group over 2 minutes to copy a file to the server. 
+
+`ssh` keys can be used to replace the login process.
+It consists on creating a pair of files. Called a *public key* in the server and a *private key* in the client computer.
+
+To generate the keys you have to type the following in the client computer:
+
+` ssh-keygen`
+
+Then the terminal will ask you for a file in which to save they key:
+
+If you have a Windows OS, you have to follow several additional steps from [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
+
+My lab group edited the file WhereAmI.java from the client  twice. First we added a `System.out.println("Hey lol")` and copied the file to the server without the ssh keys. 
+
+After, we added a `System.out.println("Hey lol 2")` after we added the ssh keys. Then we copied the java file to the server using the keys.
+
+In the following screenshot we logged in to the server and ran the WhereAmI.java file to check if the file had been copied correctly.
+
+It was! You can see the "Hey lol 2" at the bottom displayed from the server.
+
+![alt](image999.png)
+
+## Optimizing Remote Running
+
+My lab group didn't reach this part of the lab. 
