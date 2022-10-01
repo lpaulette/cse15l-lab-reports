@@ -60,10 +60,10 @@ Whenever you see `~`, it stands for the home directory.
 
     * `~> cd ~\otherDirectory`
 
-*`ls` lists the elements inside a directory.
+* `ls` lists the elements inside a directory.
     * `~> ls`
 
-*`pwd` stannds for "print working directory" and that is exactly what it does.
+* `pwd` stannds for "print working directory" and that is exactly what it does.
 
 Below is an example, be careful to follow each line.
 
