@@ -83,3 +83,5 @@ Below is an example, be careful to follow each line.
     *  `~> cp file.txt ~\otherDirectory`
 
 ![alt](image9.png)
+
+That's it!
