@@ -178,4 +178,4 @@ static List<File> getFiles(File start) throws IOException {
 
     }
 ```
-Briefly describe why the fix addresses the issue.
+# Why the fix addresses the issue.
