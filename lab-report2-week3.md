@@ -179,3 +179,6 @@ static List<File> getFiles(File start) throws IOException {
     }
 ```
 # Why the fix addresses the issue.
+
+First, I got rid of the line: `File f = start;` <br> Then I got rid of what is inside of the `if` statement and added a recursive method that went as deep into the file as needed to get the files and add them to ArrayList `result`.<br> The recursive method `readPath` is void and accepts the current directory, which is the input, and the ArrayList of files `result`.  It stores the files and directories in the current directory into an array of files and returns if this is empty, meaning if there are no files or folders inside the current one.<br>Then it goes through every instance of the array and calls the method `readPath`. If the current file element is a file it adds it to the ArrayList `result`, otherwise it skips this instance.<br>
+This fixes the issue because the previous code only peeked into the files and directories inside the current directory once. Plus, it didn't filter out the directories from the files.
