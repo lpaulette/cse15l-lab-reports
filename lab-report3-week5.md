@@ -40,7 +40,7 @@ $ grep -r Lucayans ./
 ./travel_guides/berlitz2/Bahamas-History.txt:Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
 ./travel_guides/berlitz2/Bahamas-History.txt:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
-This code block shoes how I used grep -r to look for the string "Biology" in the file structure.
+This code block shoes how I used grep -r to look for the string "Biology" in the file structure. Here I actually pressed Enter before writing the directory by accident and I discovered that you don't need to include it. It just looks in the working directory.
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -r Biology
@@ -49,12 +49,17 @@ non-fiction/OUP/Kauffman/ch1.txt:As long ago as 1971, I had published my own fir
 non-fiction/OUP/Kauffman/ch8.txt:The Biology
 ```
 # grep -rl
+
+This command combination searches recursively for a specific string in a file structure. It also only shows the name of the files that contain the String once.\
+**Source:** https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928
+
+In this code block I looked for the string "Lucayans" in the working directory.
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -rl Lucayans ./
 ./travel_guides/berlitz2/Bahamas-History.txt
 ```
-
+This code block shows how I used grep -rl to look for the string "Biology" in the file structure.
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -rl biology ./
@@ -69,12 +74,17 @@ $ grep -rl biology ./
 ```
 
 # grep -n
+This command combination displays the line number in which the string is in the file.\
+**Source:** https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928
+
+In this code block I looked for the string "Lucayans" the text file Bahamas-History.txt.
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -n Lucayans travel_guides/berlitz2/Bahamas-History.txt
 6:Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
 7:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
+This code block shows how I used grep -n to look for the string "Biology" in the text file ch1.txt.
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -n biology ./non-fiction/OUP/Berk/ch1.txt
