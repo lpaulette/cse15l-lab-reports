@@ -5,6 +5,10 @@
 
 # grep -c
 
+The grep -c combination  shows a count of the lines that have a word that matches with the String you are looking for. It speciically helps you determne how many times the word appears in a file.\
+**Source:** https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928
+
+This code block shows me applying grep -c to look for the string "the" in a text file. The coun comes out to be 68. In the two last commands I stored the results of a normal grep to a text file and then did a word count to verify it was the correct number of lines.
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -c the non-fiction/OUP/Abernathy/ch1.txt
@@ -17,20 +21,26 @@ leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ wc grep-results.txt
    68  6884 46232 grep-results.txt
 ```
+In this code block I am applying grep -c to the file I know has the string "Lucayans". And indeed, it appears two times.
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -c Lucayans travel_guides/berlitz2/Bahamas-History.txt
 2
 ```
 
-# grep -r
 
+# grep -r
+The grep -r command looks for a word in a data structure recursively.\
+**Source:** A classmate told me about this combination when studying for the skill demo. Apparently, chatGPT told her about it. 
+
+This code block shows how I used grep -r to figure out what files contained the string "Lucayans".
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -r Lucayans ./
 ./travel_guides/berlitz2/Bahamas-History.txt:Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
 ./travel_guides/berlitz2/Bahamas-History.txt:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
+This code block shoes how I used grep -r to look for the string "Biology" in the file structure.
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/docsearch/written_2 (main)
 $ grep -r Biology
