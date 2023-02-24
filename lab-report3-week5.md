@@ -6,7 +6,7 @@
 # grep -c
 
 The grep -c combination  shows a count of the lines that have a word that matches with the String you are looking for. It speciically helps you determne how many times the word appears in a file.\
-**Source:** https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928
+[Link to source.](https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928) 
 
 This code block shows me applying grep -c to look for the string "the" in a text file. The coun comes out to be 68. In the two last commands I stored the results of a normal grep to a text file and then did a word count to verify it was the correct number of lines.
 ```
@@ -51,7 +51,7 @@ non-fiction/OUP/Kauffman/ch8.txt:The Biology
 # grep -rl
 
 This command combination searches recursively for a specific string in a file structure. It also only shows the name of the files that contain the String once.\
-**Source:** https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928
+[Link to source.](https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928)
 
 In this code block I looked for the string "Lucayans" in the working directory.
 ```
@@ -75,7 +75,7 @@ $ grep -rl biology ./
 
 # grep -n
 This command combination displays the line number in which the string is in the file.\
-**Source:** https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928
+[Link to source.](https://www.ibm.com/docs/en/aix/7.2?topic=g-grep-command#grep__row-d3e143928)
 
 In this code block I looked for the string "Lucayans" the text file Bahamas-History.txt.
 ```
