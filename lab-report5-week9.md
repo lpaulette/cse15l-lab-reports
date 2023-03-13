@@ -153,7 +153,7 @@ $
 This combination returns the name of `file1` or the current file if `file1` has been edited more recently than `file2`.
 [Link to source.](https://www.ibm.com/docs/en/aix/7.2?topic=f-find-command)
 
-In the following code block I wrote something on the text file e.txt and saved it. Right after I used the -newer command with this text file and a java file that I haven't edited.
+In the following code block I wrote something on the text file e.txt and saved it. Right after, I used the -newer command with this text file and a java file that I haven't edited.
 
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/lab3 (main)
@@ -165,7 +165,7 @@ In the following code block I had the file e.txt open and was selected in the fi
 
 ![pic5](lab5-pic5.png)
 
-Then I used the -newer command with `file2` as d.txt. A text file I had not edited.
+Then I used the -newer command with `file2` as d.txt; a text file I had not edited.
 
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/lab3 (main)
