@@ -134,7 +134,7 @@ $ find . -size 0c
 ./stop
 ```
 
-In the following code block I tried using the -size combination in a more specific directory with two .txt files. Neither came up in the previous command, and when I checked them they had two lines. I deleted a line from the e.txt file and tried the command again. The e.txt file nis now empty.
+In the following code block I tried using the -size combination in a more specific directory with two .txt files. Neither came up in the previous command, and when I checked them they had two lines. I deleted a line from the e.txt file and tried the command again. The e.txt file is now empty.
 
 ```
 leezz@Lisa MINGW64 ~/OneDrive/Documents/UCSD/WI23/lab3 (main)
